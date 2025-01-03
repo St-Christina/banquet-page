@@ -1,0 +1,345 @@
+<!DOCTYPE html><html lang="en-US">
+	<head>
+		<title>St. Christina Orthodox Church - Donate</title>
+		<!-- Font to match the Google Sites font -->
+		<link href="https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CGentium%20Basic%3A400%2C400italic%2C700%2C700italic&display=swap" rel="stylesheet" nonce="cyDRb2bwnnosgVHx0JW1_Q">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			/** Base */
+			:root {
+				--red: #980000;
+				--orange: #b76401;
+				--page-padding: 0 10%;
+			}
+			body {
+				display: grid;
+				font-family: Lora, serif;
+				font-weight: 400;
+				line-height: 1.38;
+				margin: 0px;
+			}
+			body article.realPage {
+				display: none;
+			}
+			body .pageBlocker {
+				position:absolute;
+				height:100%;
+				width:100%;
+				text-align: center;
+				z-index: 100;
+				background-color: white;
+			}
+			.gg {
+				vertical-align: middle;
+			}
+			.gg-home-alt {
+				box-sizing: border-box;
+				position: relative;
+				display: block;
+				transform: scale(var(--ggs, 1));
+				width: 18px;
+				height: 14px;
+				border: 2px solid;
+				border-top: 0;
+				border-radius: 2px;
+				border-bottom-left-radius: 3px;
+				border-bottom-right-radius: 3px;
+				margin-bottom: -2px;
+			}
+			.gg-home-alt::after,
+			.gg-home-alt::before {
+				content: "";
+				display: block;
+				box-sizing: border-box;
+				position: absolute;
+			}
+			.gg-home-alt::before {
+				border-top: 2px solid;
+				border-left: 2px solid;
+				border-top-left-radius: 4px;
+				transform: rotate(45deg);
+				top: -5px;
+				border-radius: 3px;
+				width: 14px;
+				height: 14px;
+				left: 0;
+			}
+			.gg-home-alt::after {
+				width: 6px;
+				height: 10px;
+				background: currentColor;
+				border-top-left-radius: 100px;
+				border-top-right-radius: 100px;
+				left: 4px;
+				bottom: -2px;
+			}
+
+			/** Menu*/
+			menu {
+				margin: 0px;
+				padding: 0px;
+				padding-left: 16px;
+			}
+			menu section, menu section.seal *, menu section.back * {
+				display: inline-block;
+			}
+			menu section {
+				cursor: pointer;
+			}
+			menu section.seal img {
+				width: 2.5em;
+				vertical-align: middle;
+			}
+			menu section.seal p {
+				margin: .5em 0 0 .5em;
+				font-size: 15pt;
+			}
+			menu section.back {
+				float: right;
+				margin: .5em 1em;
+				color: var(--red);
+			}
+
+			/** Header */
+			h1 {
+				color: var(--red);
+				width: 100%;
+				text-align: center;
+				font-size: 45pt;
+			}
+			hr {
+				color: gainsboro;
+				height: 1px;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+			}
+			i {color: var(--orange);}
+			header {
+				padding: var(--page-padding);
+			}
+			header p {
+				text-align: center;
+				width: 60%;
+				margin-left: 20%;
+				font-size: 20px;
+			}
+
+			/** Main Donation Offset */
+			section.offset {
+				background-color: rgba(234,234,234,1);
+				padding: 1em 10%;
+				display: grid;
+				align-items: center;
+  				justify-items: center;
+			}
+			section.offset p {
+				font-size: 15.0pt;
+  				font-weight: 700;
+			}
+			a {
+				color: var(--red);
+			}
+			section.offset a {
+				text-align: center;
+			}
+
+			/** Other Ways*/
+			h2 {
+				color: var(--red);
+				text-align: center;
+			}
+			section.other {
+				margin-top: 1em;
+				padding: var(--page-padding);
+				display: grid;
+				margin-bottom: 1em;
+			}
+			section.other img {
+				width: 100%;
+			}
+			section.other article {
+				padding-right: 2em;
+			}
+			section.other article p {
+				font-family: "Gentium Basic", serif;
+				font-size: 15pt;
+			}
+
+			/** Footer */
+			footer {
+				background-color: var(--red);
+				padding: 1em;
+				display: grid;
+				align-items: center;
+  				justify-items: center;
+				color: white;
+				font-size: 15pt;
+			}
+
+			footer nav.socials button {
+				width: 32%;
+				background-color: transparent;
+				border: none;
+			}
+			footer nav.socials img {
+				width: 100%;
+			}
+			footer section p {
+				text-align: center;
+				margin: .15em 0;
+			}
+			
+			/** Media Queries */
+			@media (width < 480px) {
+				menu section {
+					float: initial !important;
+				}
+				menu {
+					display: grid;
+					grid-template-columns: 100%;
+					align-items: center;
+					justify-items: center;
+				}
+				header p {
+					width: 90%;
+					margin-left: 5%;
+				}
+				section.offset, section.other, footer {
+					grid-template-columns: 100%;
+					grid-template-rows: auto;
+				}
+				footer nav.socials button {
+					width: 75%;
+				}
+				footer nav.socials {
+					display: grid;
+					grid-template-columns: 33% 33% 33%;
+					align-items: center;
+					justify-content: center;
+					justify-items: center;
+					grid-template-rows: 4em;
+				}
+			}
+			@media (480px <= width < 768px) {
+				header p {
+					width: 80%;
+					margin-left: 10%;
+				}
+				section.offset, section.other, footer {
+					grid-template-columns: 100%;
+					grid-template-rows: auto;
+				}
+				footer nav.socials {
+					width: 60%;
+				}
+			}
+			@media (768px <= width < 1280px) {
+				header p {
+					width: 70%;
+					margin-left: 15%;
+				}
+				section.offset {
+					grid-template-columns: 60% auto;
+				}
+				section.other {
+					grid-template-columns: 50% auto;
+				}
+				footer {
+					grid-template-columns: 40% auto;
+				}
+			}
+			@media (width >= 1280px) {
+				section.offset {
+					grid-template-columns: 80% auto;
+				}
+				section.other {
+					grid-template-columns: 50% auto;
+				}
+				footer {
+					grid-template-columns: 20% auto;
+				}
+			}
+		</style>
+		<script>
+			function showPage() {
+				if (window.self == window.top && window == window.parent) {
+					document.querySelector("body article.realPage").style.display = "grid";
+					document.querySelector("body .pageBlocker").style.display ="none";
+				}
+				else {
+					document.querySelector("body .pageBlocker").innerHTML = "<p>Website blocked due to frame loading or JavaScript is disabled.</p><p>Please enable JavaScript or navigate directly to www.stchristinaorthodox.org</p>";
+					top.location = self.location;
+				}
+			}
+		</script>
+	</head>
+	<body onload="showPage()">
+		<div class="pageBlocker"></div>
+		<article class="realPage">
+			<!-- Top menu -->
+			<menu>
+				<section class="seal" onclick="window.location.href = 'https:\/\/www.stchristinaorthodox.org'">
+					<a href="https://www.stchristinaorthodox.org"><img src="images/seal.png" alt="Logo"></a>
+					<p>St. Christina Orthodox Church</p>
+				</section>
+				<section class="back" onclick="window.location.href = 'https:\/\/www.stchristinaorthodox.org'">
+					<span class="gg gg-home-alt"></span>
+					&nbsp;
+					<a href="https://www.stchristinaorthodox.org">Home</a>
+				</section>
+			</menu>
+
+			<!-- Title and scripture quote -->
+			<header>
+				<h1>Support Our Parish</h1>
+				<hr></hr>
+				<p>
+					<i>
+						Jesus looked up and saw the rich putting their gifts into the treasury; and he saw a poor widow put in two copper coins. And he said, “Truly I tell you, this poor widow has put in more than all of them; for they all contributed out of their abundance, but she out of her poverty put in all the living that she had."
+					</i>
+				</p>
+			</header>
+			<!-- Main links to donate -->
+
+			<section class="offset">
+				<p>
+					To make a secure one-time or automatic recurring contribution to St. Christina's from your bank or credit card account, click <a href="https://giving.parishsoft.com/app/giving/stc3612192">here</a> or on the green "Online Giving" button.
+				</p>
+				<a href="https://giving.parishsoft.com/app/giving/stc3612192"><img src="images/online-giving.png"></a>
+			</section>
+
+			<!-- Other ways to give -->
+			<section class="other">
+				<article>
+					<h2>No Cost Giving</h2>
+					<p>The following programs benefit our parish at no extra cost:</p>
+					<p>
+						<b>Escrip:</b> Visit <a href="https://www.escrip.com">www.escrip.com</a>, indicate that you wish to support St. Christina Orthodox Church, and register your  debit/credit cards. Applies to participating stores (both brick & mortar and online).
+					</p>
+					<p>
+						<b>GoodSearch & GoodShop:</b> Visit <a href="https://www.goodsearch.com">www.goodsearch.com</a> and tell them you want to support St. Christina Orthodox Church. GoodSearch is a Yahoo-powered internet search engine that donates a penny each time you enter a search. Similarly, <a href="https://www.goodshop.com">www.goodshop.com</a> is a portal that, when used at your usual online stores, prompts the stores to donate a percentage to the parish.
+					</p>
+				</article>
+				<section>
+					<img src="images/singing.jpg" alt="Orthodox male trio singing in front of bier during Holy Week.">
+					<img src="images/wedding.jpg" alt="Orthodox newly wed couple greet parishioners at doorway to church.">
+				</section>
+			</section>
+
+			<!-- Footer with social media links and contact info -->
+			<footer>
+				<nav class="socials">
+					<button><img src="images/social/fb.png" alt="Facebook logo"></button>
+					<button><img src="images/social/insta.png" alt="Instagram logo"></button>
+					<button><img src="images/social/yt.png" alt="Youtube logo"></button>
+				</nav>
+				<section>
+					<p>3721 Parish Avenue Fremont, CA</p>	
+					<p>Office Phone: (510) 739-0908</p>
+					<p>Rector: frdamian@stchristinaorthodox.org</p>
+				</section>
+			</footer>
+		</article>
+	</body>
+</html>
