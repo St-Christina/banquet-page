@@ -1,2 +1,3 @@
-# banquet-page
-Public information for our annual banquet
+A very simple banquet page to replace our current page.
+
+-Fr. Damian
