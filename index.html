@@ -167,6 +167,12 @@
 				font-size: 18pt;
 			}
 
+			section.flyer {
+				display: grid;
+				grid-template-columns: 50% auto;
+				column-gap: 0.5em;
+			}
+
 			/** Footer */
 			footer {
 				background-color: var(--red);
@@ -207,7 +213,7 @@
 					width: 90%;
 					margin-left: 5%;
 				}
-				section.offset, section.other, footer {
+				section.offset, section.other, section.flyer, footer {
 					grid-template-columns: 100%;
 					grid-template-rows: auto;
 				}
@@ -228,7 +234,7 @@
 					width: 80%;
 					margin-left: 10%;
 				}
-				section.offset, section.other, footer {
+				section.offset, section.other, section.flyer, footer {
 					grid-template-columns: 100%;
 					grid-template-rows: auto;
 				}
@@ -255,7 +261,7 @@
 				section.offset {
 					grid-template-columns: 80% auto;
 				}
-				section.other {
+				section.other, section.flyer {
 					grid-template-columns: 50% auto;
 				}
 				footer {
@@ -300,14 +306,14 @@
 					We're excited to celebrate our 21st Anniversary with you in 2025!					
 				</p>
 				<p>
-					Our annual Banquet & Silent Auction raises funds to pay back our property loans and help us provide a permanent Orthodox presence in the Fremont area. We look forward to sharing a festive evening with delicious homemade food, drink, live music, and fellowship with you all!
+					Our annual Banquet & Silent Auction raises funds to pay back our property loans and helps us provide a permanent Orthodox presence in the Fremont area. We look forward to sharing a festive evening with delicious homemade food, drink, live music, and fellowship with everyone!
 				</p>
 			</header>
 			<!-- Main links to donate -->
 
 			<section class="offset">
 				<p>
-					Order tickets or make a tax-deductible donation <a href="https://giving.parishsoft.com/App/Form/38225440-952e-4f49-894e-cb3a70c1695b">HERE</a>
+					Order tickets or make a tax-deductible donation <a href="https://giving.parishsoft.com/App/Form/38225440-952e-4f49-894e-cb3a70c1695b">HERE</a>.
 				</p>
 				
 			</section>
@@ -327,9 +333,9 @@
 						St. James Hall, 34700 Fremont Blvd, Fremont, CA
 					</p>	
 				</article>
-				<section>
-					<img src="images/Flyer Front.png" alt="">
-					<img src="images/Flyer back.png" alt="">
+				<section class="flyer">
+					<img src="images/Flyer Front.png" alt="Front of 2025 Banquet Flyer">
+					<img src="images/Flyer back.png" alt="Back of 2025 Banquet Flyer">
 				</section>
 				<article>
 					<p>
