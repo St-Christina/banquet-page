@@ -169,12 +169,37 @@
 
 			section.flyer {
 				display: grid;
-				grid-template-columns: 50% auto;
+				grid-template-columns: auto auto auto;
 				column-gap: 0.5em;
+			}
+
+			section.sponsors {
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+
+			article.logos {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				gap: 2em;
+			}
+
+			article.logos div {
+				max-width: 200px;
+			}
+
+			article.logos div img {
+				width: 100%;
 			}
 
 			/** Footer */
 			footer {
+				margin-top:2em;
 				background-color: var(--red);
 				padding: 1em;
 				display: grid;
@@ -346,6 +371,26 @@
 				</article>
 			</section>
 
+			<!-- Sponsors -->
+			 <section class="sponsors">
+				<article><h2>A big thank you to all of our sponsors who help make this possible!</h2></article>
+				<article class="logos">
+					<div><img src="images/sponsor_logos/the_accounting_doctor.jpg" alt="The Accounting Doctor Logo"></div>
+					<div><img src="images/sponsor_logos/American Conservatory Theater.jpeg" alt="American Conservatory Theater Logo"></div>
+					<div><img src="images/sponsor_logos/byington vineyard.png" alt="Byington Vineyard Logo"></div>
+					<div><img src="images/sponsor_logos/in-n-out burger.png" alt="In-N-Out Burger Logo"></div>
+					<div><img src="images/sponsor_logos/the_lawrence_hall_of_science_uc_berkeley.jpg" alt="The Lawrence Hall of Science UC Berkeley Logo"></div>
+					<div><img src="images/sponsor_logos/Oriental Trading Company.jpeg" alt="Oriental Trading Company"></div>
+					<div><img src="images/sponsor_logos/zSemifreddis.jpeg" alt="Semifreddis Logo"></div>
+					<div><img src="images/sponsor_logos/sharks ice.png" alt="Sharks Ice Logo"></div>
+					<div><img src="images/sponsor_logos/sophia.png" alt="Sophia Logo"></div>
+					<div><img src="images/sponsor_logos/twm_winemkts_2275x504.png" alt="Total Wine & More Logo"></div>
+				</article>
+				<article class="names">
+					<h3>Named Sponsors:</h3>
+					The San Francisco Opera, SF Giants, Grand Lake Theater, Blackhawk Museum, and  Scandia Golfland - Fairfield
+				</article>
+			 </section>
 
 			<!-- Footer with social media links and contact info -->
 			<footer>
